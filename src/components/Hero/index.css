@@ -31,3 +31,18 @@
   width: 70%;
   border-radius: 20px;
 }
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 10px at the midpoint */
+  }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+  will-change: transform;
+}
