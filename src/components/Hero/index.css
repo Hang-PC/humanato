@@ -8,3 +8,26 @@
     padding-left: 0; /* Remove left padding on small screens */
   }
 }
+
+.faded-bg {
+  animation: floatUpDown 2s ease-in-out infinite;
+  border-radius: 50%;
+}
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(-40px); /* Move up by 20px */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
+.platform-card {
+  position: absolute;
+  height: 60vh;
+  width: 70%;
+  border-radius: 20px;
+}
