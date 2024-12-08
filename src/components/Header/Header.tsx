@@ -3,9 +3,7 @@ import { useState } from "react";
 import logo from "../../assets/humanato-logo.png";
 import "./index.css";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
