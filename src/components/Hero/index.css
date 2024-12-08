@@ -1,0 +1,10 @@
+.hero-text {
+  padding-left: 10vw;
+  padding-top: 30vh;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    padding-left: 0; /* Remove left padding on small screens */
+  }
+}
