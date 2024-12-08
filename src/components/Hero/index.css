@@ -1,6 +1,33 @@
 .hero-text {
-  padding-left: 10vw;
+  padding-left: 5vw;
   padding-top: 30vh;
+}
+
+.hero-main-text {
+  animation: heroMainTextAnimation 0.5s ease-in;
+}
+
+.hero-secondary-text {
+  animation: heroSecondaryTextAnimation 0.5s ease-in;
+}
+
+@keyframes heroMainTextAnimation {
+  0% {
+    margin-left: -80px;
+  }
+  100% {
+    margin-left: 0px; /* Return to original position */
+  }
+}
+@keyframes heroSecondaryTextAnimation {
+  0% {
+    opacity: 0.2;
+    margin-left: -80px;
+  }
+  100% {
+    margin-left: 0px; /* Return to original position */
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -27,14 +54,14 @@
 
 .platform-card {
   position: absolute;
-  height: 60vh;
-  width: 70%;
+  height: 55vh;
+  width: 60%;
   border-radius: 20px;
 }
 
-
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0); /* Start and end at the same position */
   }
   50% {

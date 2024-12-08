@@ -4,11 +4,33 @@
   top: 20px;
 }
 
+.logo-text {
+  animation: logoTextAnimation 0.6s ease-in;
+  overflow: hidden;
+}
+
+/* Keyframes for .nav-bar */
 @keyframes headerAnimation {
   0% {
     top: -10px;
   }
-  100% {
+  70% {
     top: 10px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+/* Keyframes for .logo-text */
+@keyframes logoTextAnimation {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }

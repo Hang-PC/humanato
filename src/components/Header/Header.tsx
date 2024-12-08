@@ -13,6 +13,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <img src={logo} alt="Logo" />
+            <h3 className="logo-text text-2xl ms-3 opacity-65">Humanato</h3>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
