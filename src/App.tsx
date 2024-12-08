@@ -2,7 +2,7 @@ import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <main>
+    <main className="h-screen bg-primary">
       <Hero />
     </main>
   );
